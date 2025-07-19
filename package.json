@@ -1,0 +1,110 @@
+{
+  "name": "auto-coder",
+  "version": "1.0.0",
+  "description": "Intelligent test artifact generator",
+  "main": "src/auto-coder.js",
+  "scripts": {
+    "auto-coder-generate": "./auto-coder.sh generate input/jira/jira-story-cfc-bundle.txt",
+    "auto-coder-run": "./auto-coder.sh test generated/tests/jira-story-rs-end-point-test.js",
+    "auto-coder-adp": "./auto-coder.sh test generated/tests/adp-integration-test.js",
+
+    "auto-coder-run:custom:reports": "npm run auto-coder-run && npm run reports:detailed && npm run reports:open",
+    "auto-coder-adp:reports": "npm run auto-coder-adp && npm run reports:detailed && npm run reports:open",
+
+    "generate": "./auto-coder.sh generate",
+    "test": "./auto-coder.sh test generated/tests/jira-story-rs-end-point-test.js", 
+    "run": "./auto-coder.sh run",
+    "interactive": "echo 'Interactive CLI temporarily unavailable. Use: ./auto-coder.sh help for available commands'",
+    
+    "generate:text": "./auto-coder.sh generate input/text/",
+    "generate:jira": "./auto-coder.sh generate input/jira/",
+    "generate:images": "./auto-coder.sh generate input/images/",
+    "generate:curl": "./auto-coder.sh generate input/curl/",
+    "generate:cfc": "./auto-coder.sh generate input/jira/jira-story-cfc-bundle.txt",
+    
+    "test:generated": "./auto-coder.sh test generated/tests/",
+    "test:features": "./auto-coder.sh test generated/features/", 
+    "test:cfc": "./auto-coder.sh test generated/tests/jira-story-cfc-bundle-test.js",
+    
+    "reports:open": "open generated/reports/playwright-report/index.html",
+    "reports:detailed": "open generated/reports/custom/detailed-test-report.html",
+    "reports:clean": "rm -rf generated/reports && mkdir -p generated/reports",
+    
+    "dev:test": "npx playwright test --ui",
+    "dev:debug": "npx playwright test --debug",
+    "dev:trace": "npx playwright show-trace",
+    
+    "cli": "./auto-coder.sh interactive",
+    "start": "node bin/auto-coder.js",
+    "analyze": "node bin/auto-coder.js analyze",
+    "examples": "node bin/auto-coder.js examples",
+    "demo": "node final-demonstration.js",
+    "comprehensive-test": "node comprehensive-test-suite.js",
+    
+    "test:watch": "jest --watch",
+    "lint": "eslint src/ --ext .js",
+    "lint:fix": "eslint src/ --ext .js --fix",
+    "clean": "rm -rf generated/test-results/* test-results/*",
+    "clean:all": "rm -rf generated/* test-results/*"
+  },
+  "bin": {
+    "auto-coder": "./bin/auto-coder.js"
+  },
+  "keywords": [
+    "test-automation",
+    "bdd",
+    "cucumber",
+    "playwright",
+    "pattern-extraction",
+    "nlp",
+    "artifact-generation"
+  ],
+  "author": "Auto-Coder Framework Team",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/test": "^1.40.0",
+    "playwright": "^1.40.0", 
+    "chai": "^4.3.10",
+    "axios": "^1.5.0",
+    "chalk": "^4.1.2",
+    "chokidar": "^4.0.3",
+    "commander": "^11.1.0",
+    "compromise": "^14.10.0",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "glob": "^7.2.3",
+    "handlebars": "^4.7.8",
+    "inquirer": "^9.2.10",
+    "joi": "^17.10.2",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^22.1.0",
+    "lodash": "^4.17.21",
+    "natural": "^6.5.0",
+    "ora": "^5.4.1",
+    "readline": "^1.3.0",
+    "sharp": "^0.32.5",
+    "tesseract.js": "^4.1.1",
+    "winston": "^3.10.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auto-coder/auto-coder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/auto-coder/auto-coder/issues"
+  },
+  "homepage": "https://github.com/auto-coder/auto-coder#readme"
+}

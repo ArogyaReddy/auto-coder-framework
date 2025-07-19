@@ -1,0 +1,10 @@
+The logic to set the prior payroll provider in service_onboarding was modified so that it will incorrectly set the prior payroll provider. There are two scenarios that need to be adjusted.
+
+src/server/lib/aboutYourCompany/mapSalesOrderToAboutYourCompanyDetails.js - line 44 ish
+
+If the priorMethodDetail is not set (undefined, null, '') then priorPayrollProvider should not be set (it is currently set to Other which is wrong)
+If the priorMethodDetail is 48 (New Company - No Existing Vendor) then set priorPayrollProvider to nothing as they don't have one. This is a new situation that I am seeing clients coming in as this and they shouldn't be marked as Other.
+Each environment has a different ID for this. Currently Paychex, QB, and Gusto are handled through consul for this. The same thing is needed to support this one to account for the different IDs.
+FIT - 35
+IAT - 39
+Prod - 48

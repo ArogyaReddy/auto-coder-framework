@@ -1,0 +1,32 @@
+User Login Feature Test
+
+As a user of the auto-coder-framework validation
+I want to test the login functionality
+So that I can ensure the framework generates proper test artifacts
+
+Acceptance Criteria:
+- User can enter username and password
+- System validates the credentials
+- User is redirected to dashboard on successful login
+- Error message is displayed for invalid credentials
+
+Test Scenarios:
+1. Valid Login
+   Given user is on the login page
+   When user enters valid username "testuser" and password "testpass"
+   And user clicks the login button
+   Then user should be redirected to the dashboard
+   And welcome message should be displayed
+
+2. Invalid Login
+   Given user is on the login page
+   When user enters invalid username "baduser" and password "badpass"
+   And user clicks the login button
+   Then error message "Invalid credentials" should be displayed
+   And user should remain on the login page
+
+3. Empty Credentials
+   Given user is on the login page
+   When user clicks the login button without entering credentials
+   Then validation messages should be displayed
+   And login button should remain disabled

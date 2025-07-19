@@ -1,0 +1,34 @@
+{
+  "Playwright Test (TS)": {
+    "prefix": "pw-test-ts",
+    "body": [
+      "import { test, expect, Page } from '@playwright/test';",
+      "",
+      "test('${1:test description}', async ({ page }: { page: Page }) => {",
+      "  await page.goto('${2:url}');",
+      "  ${0}",
+      "});"
+    ],
+    "description": "Create a TypeScript Playwright test"
+  },
+  "Page Object (TS)": {
+    "prefix": "page-object-ts",
+    "body": [
+      "import { Page } from '@playwright/test';",
+      "",
+      "export class ${1:PageName} {",
+      "  private page: Page;",
+      "  private ${2:element} = '${3:#selector}';",
+      "",
+      "  constructor(page: Page) {",
+      "    this.page = page;",
+      "  }",
+      "",
+      "  async ${4:methodName}(): Promise<void> {",
+      "    ${0}",
+      "  }",
+      "}"
+    ],
+    "description": "Create a TypeScript page object class"
+  }
+}

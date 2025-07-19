@@ -1,0 +1,14 @@
+CFC - CFC Access for Terminated and Payroll Hold Clients Spike
+
+As a RUN client 
+I want to have the ability to access CashFlow Central (CFC)
+So that i can benefit from the services offered by them and streamline my financial operations
+
+Figma: 
+
+https://www.figma.com/proto/NDOwlBOyCIqMaQSkKNd2fk/CashFlow-Central--CFC--Integration?node-id=277-20997&p=f&t=FVaFk3H64qVpSqfk-1&scaling=min-zoom&content-scaling=fixed&page-id=286%3A17730&starting-point-node-id=277%3A20997
+
+Acceptance Criteria:
+
+Terminated clients should not have access to CFC as soon as the bundle is terminated
+Client deemed as Fraud/Risk should not have access to CFC – this will be taken care automatically since client will be terminated

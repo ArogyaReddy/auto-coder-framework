@@ -1,0 +1,59 @@
+class {{className}} {
+  constructor() {
+    this.page = null;
+  }
+
+  // Page elements
+  {{#each elements}}
+  get {{this.name}}() {
+    return this.page.locator('{{this.selector}}');
+  }
+  {{/each}}
+
+  // Default elements based on analysis
+  get {{camelCase primaryEntity}}Input() {
+    return this.page.locator('[data-testid="{{kebabCase primaryEntity}}-input"]');
+  }
+
+  get {{camelCase primaryAction}}Button() {
+    return this.page.locator('[data-testid="{{kebabCase primaryAction}}-button"]');
+  }
+
+  get successMessage() {
+    return this.page.locator('[data-testid="success-message"]');
+  }
+
+  // Page methods
+  {{#each methods}}
+  {{this}}
+  {{/each}}
+
+  async login(role) {
+    // Implementation for login as role
+    await this.page.goto('/login');
+    // Add login logic based on role
+  }
+
+  async navigateToPage() {
+    // Navigate to the main page
+    await this.page.goto('/{{kebabCase domain}}');
+  }
+
+  async {{methodName}}(data = {}) {
+    // Implementation for {{primaryAction}} {{primaryEntity}}
+    await this.{{camelCase primaryEntity}}Input.fill(data.{{camelCase primaryEntity}} || 'test data');
+    await this.{{camelCase primaryAction}}Button.click();
+  }
+
+  async verify{{pascalCase primaryEntity}}State(expectedState) {
+    // Implementation for verification
+    const actualState = await this.{{camelCase primaryEntity}}Input.textContent();
+    expect(actualState).toContain(expectedState);
+  }
+
+  async verifySuccessMessage() {
+    await expect(this.successMessage).toBeVisible();
+  }
+}
+
+module.exports = {{className}};

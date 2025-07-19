@@ -1,0 +1,41 @@
+{
+  "Playwright Test": {
+    "prefix": "pw-test",
+    "body": [
+      "import { test, expect } from '@playwright/test';",
+      "",
+      "test('${1:test description}', async ({ page }) => {",
+      "  await page.goto('${2:url}');",
+      "  ${0}",
+      "});"
+    ],
+    "description": "Create a Playwright test"
+  },
+  "Jest Test": {
+    "prefix": "jest-test",
+    "body": [
+      "describe('${1:feature}', () => {",
+      "  it('${2:should do something}', () => {",
+      "    ${0}",
+      "  });",
+      "});"
+    ],
+    "description": "Create a Jest test"
+  },
+  "Page Object": {
+    "prefix": "page-object",
+    "body": [
+      "class ${1:PageName} {",
+      "  constructor(page) {",
+      "    this.page = page;",
+      "    this.${2:element} = '${3:#selector}';",
+      "  }",
+      "",
+      "  async ${4:methodName}() {",
+      "    ${0}",
+      "  }",
+      "}"
+    ],
+    "description": "Create a page object class"
+  }
+}

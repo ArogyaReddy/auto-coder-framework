@@ -1,0 +1,11 @@
+{
+  "extractedAt": "2025-07-17T17:27:26.387Z",
+  "sbsPath": "/Users/arog/framework/qa_automation/SBS_Automation",
+  "statistics": {
+    "filesProcessed": 3087,
+    "patternsExtracted": 3087,
+    "vocabularyTerms": 585,
+    "processingTime": 924
+  },
+  "version": "1.0.0"
+}

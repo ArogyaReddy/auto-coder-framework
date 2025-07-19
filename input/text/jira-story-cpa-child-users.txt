@@ -1,0 +1,25 @@
+Time for ALL CPA Child User roles
+
+
+
+This request came up as a result of Firm user feedback from Daniel Rafeedie. The complaint was that child users can only submit payroll (Not approve), and if they wait until the last minute, right before the cutoff time to submit payroll, then the firms users don't have enough time to review and approve the payroll.  This will ultimately end with payrolls processing late and a potential for people getting paid late. 
+
+This applies to Desktop, mobile and within the embedded context. This change only applies to All CPA child user roles (roles 5, 9 & 12)
+
+Add a FF
+Check for isCpaChild from installation context to not show the time.
+AC 1: On the RUN Homepage for all CPA child user roles, when we are 4 days leading up to payroll and we display the cutoff time under the due date, please make the following changes:
+
+Do not display the current text that is underlined below and references the cutoff time
+Replace that text with the following generic text: Payroll due date.
+Nothing else needs to change- the orange color can remain as is
+
+AC 2: No changes needed when we are more than 4 days away from due date (since we do not reference any cutoff time) 
+
+AC 3: No changes needed when we are past due (since we do not reference any cutoff time) 
+
+As the PO for payroll
+
+I would like to hide any reference to the cutoff time on the RUN Homepage for all CPA child user roles
+
+So that we don't interfere with the rules that CPAs have set for their child users and when they need to submit payroll

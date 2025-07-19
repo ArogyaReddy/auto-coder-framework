@@ -1,0 +1,10 @@
+CFC Core RUN Menu
+
+As a RUN client
+I want to access CashFlow Central (CFC)
+So that I can streamline my financial operations with Learn More functionality
+
+Requirements:
+- Client facing roles can access Learn More
+- Role 67 should not have access to Learn More functionality
+- Feature should integrate with IPM content

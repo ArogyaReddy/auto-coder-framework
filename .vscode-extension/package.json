@@ -1,0 +1,93 @@
+{
+  "name": "auto-coder",
+  "displayName": "Auto-Coder",
+  "description": "Visual template builder and code generation",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:auto-coder.openBuilder",
+    "onView:auto-coder.templateExplorer"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "auto-coder.openBuilder",
+        "title": "Open Template Builder",
+        "category": "Auto-Coder"
+      },
+      {
+        "command": "auto-coder.generateTemplate",
+        "title": "Generate Template",
+        "category": "Auto-Coder"
+      },
+      {
+        "command": "auto-coder.discoverTemplates",
+        "title": "Discover Templates",
+        "category": "Auto-Coder"
+      },
+      {
+        "command": "auto-coder.refreshTemplates",
+        "title": "Refresh Templates",
+        "category": "Auto-Coder",
+        "icon": "$(refresh)"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "auto-coder.templateExplorer",
+          "name": "Auto-Coder Templates",
+          "when": "workspaceHasTemplates"
+        }
+      ],
+      "auto-coder": [
+        {
+          "type": "webview",
+          "id": "auto-coder.templateBuilder",
+          "name": "Template Builder"
+        }
+      ]
+    },
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      }
+    ],
+    "configuration": {
+      "title": "Auto-Coder Framework",
+      "properties": {
+        "auto-coder.templatePath": {
+          "type": "string",
+          "default": "./templates",
+          "description": "Path to template directory"
+        },
+        "auto-coder.autoGenerate": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable automatic template generation"
+        },
+        "auto-coder.defaultFramework": {
+          "type": "string",
+          "enum": [
+            "playwright",
+            "jest",
+            "cucumber"
+          ],
+          "default": "playwright",
+          "description": "Default testing framework"
+        }
+      }
+    }
+  }
+}

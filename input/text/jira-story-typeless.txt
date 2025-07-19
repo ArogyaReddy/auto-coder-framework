@@ -1,0 +1,20 @@
+Acceptance criteria:
+
+The rs_employee endpoint used to create the employee when the employee type is not known (Driver's License)
+Log in some manner that this is not a known employee type
+ 
+
+If we have created an employee as a W2 employee there is a chance that actually they should have been set up as a contractor. Example being where employee is created from a driver's License as it doesn't tell us the employee type. We need to provide Alex with the ability to change the employee to be a contractor. 
+
+I think changing the other way ie Contractor to Employee is less likely. Today we create contractors form documents that are obviously for contractors only (ie W-9 or DLs where client has the 1099 bundle) so its less likely that we create a contractor in error. If its easier to support changing either way then lets do that else EE to contractor is the prime scenario. 
+
+
+AC1: Prime use case.
+Given I have an W2 employee created from an extraction
+When I see them in the EE app
+Then I should be able to switch them to be a contractor 
+
+AC2:  Secondary use case.
+Given I have an contractor created from an extraction
+When I see them in the EE app
+Then I should be able to switch them to be a W2 employee 

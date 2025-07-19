@@ -1,0 +1,23 @@
+Feature: {{featureName}}
+  As a {{primaryRole}}
+  I want to {{primaryAction}} {{primaryEntity}}
+  So that I can manage my {{domain}} operations
+
+{{#if background}}
+  Background:
+    {{#each background}}
+    {{this}}
+    {{/each}}
+{{/if}}
+
+{{#each scenarios}}
+  Scenario: {{name}}
+    {{#each steps}}
+    {{this}}
+    {{/each}}
+{{/each}}
+
+{{#if examples}}
+  Examples:
+    {{examples}}
+{{/if}}

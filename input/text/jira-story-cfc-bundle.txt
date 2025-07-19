@@ -1,0 +1,23 @@
+CFC: Bundle - Add CFC Bundle during Provisioning
+
+Add the CFC bundle during Order Provisioning  without activating the component if the eso order contains the major bundles.
+Adp Essential 
+Run Complete and HR 
+Run Complete and HRPLUS
+HR PRO
+Bundle activation should only make the component available  (not activated)
+Add new property in the installation context to trigger the RequireActivation of the component.
+Added Logs to the CFC component subscriber
+Create the CFC task  on component available.
+Add a new property in installation context for the available bundles ( bundles not in activated state)
+Add new property to display the available bundles in the core context wrapper.
+Add new property in the installation context 
+Add new property in system model 
+Ad the new property in the index_Config file to display the available bundles in top.run.context
+Ad the new property in  nextgen installation context 
+Acceptance Criteria: 
+
+ESO order without CFC bundle and  above mentioned major bundles should add CFC bundle for the IID.
+ESO with CFC bundle should able to add the CFC bundle.
+New property should be available in installation context : avilableBundles
+CFC task should be shown in to do task

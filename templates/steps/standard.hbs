@@ -1,0 +1,31 @@
+const { Given, When, Then } = require('@cucumber/cucumber');
+const {{className}} = require('../pages/{{kebabCase className}}');
+
+// Step definitions for {{featureName}}
+const {{camelCase className}} = new {{className}}();
+
+{{#each stepDefinitions}}
+{{this}}
+
+{{/each}}
+
+// Common steps
+Given('I am logged in as a {string}', async function (role) {
+  await {{camelCase className}}.login(role);
+});
+
+Given('I am on the {{domain}} page', async function () {
+  await {{camelCase className}}.navigateToPage();
+});
+
+When('I {{primaryAction}} the {{primaryEntity}}', async function () {
+  await {{camelCase className}}.{{methodName}}();
+});
+
+Then('the {{primaryEntity}} should be {string}', async function (expectedState) {
+  await {{camelCase className}}.verify{{pascalCase primaryEntity}}State(expectedState);
+});
+
+Then('I should see the success message', async function () {
+  await {{camelCase className}}.verifySuccessMessage();
+});

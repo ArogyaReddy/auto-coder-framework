@@ -1,0 +1,3 @@
+I want to test user login functionality for admin portal.
+Users should be able to log in with valid credentials and access the dashboard.
+Invalid credentials should show an error message.
