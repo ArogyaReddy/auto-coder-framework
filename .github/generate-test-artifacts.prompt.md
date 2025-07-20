@@ -4,11 +4,17 @@ Use this prompt template to generate comprehensive test artifacts from requireme
 
 ## CRITICAL GROUND RULES FOR AUTO-CODER FRAMEWORK
 
-1. **MANDATORY STEP COMPLETENESS**: Every single step in the feature file MUST have a corresponding implementation in the step definitions file. NO MISSING STEPS ALLOWED.
-2. **STEP VALIDATION**: Verify that every Given/When/Then step in .feature file has exact matching implementation in -steps.js file
-3. **DOUBLE CHECK and DOUBLE VALIDATE** all generated code and test artifacts with all points listed below
-4. **FRAMEWORK CONSISTENCY**: All generated files MUST be consistent with the existing SBS_Automation framework
-5. **NAMING CONVENTIONS**: All generated files MUST follow the naming conventions and generation patterns used in the SBS_Automation framework
+### MANDATORY FIRST STEPS:
+1. **ALWAYS READ REQUIREMENT FILE**: MUST use read_file tool to read actual requirement content before generating ANY files
+2. **EXACT FILE NAMING**: MUST use exact basename from input file path for ALL generated files (e.g., jira-story-cfc-bundle.txt → jira-story-cfc-bundle-steps.js)
+3. **NEVER REUSE CONTEXT**: NEVER assume or reuse previous context - always read current requirement file
+
+### STEP COMPLETENESS REQUIREMENTS:
+4. **MANDATORY STEP COMPLETENESS**: Every single step in the feature file MUST have a corresponding implementation in the step definitions file. NO MISSING STEPS ALLOWED.
+5. **STEP VALIDATION**: Verify that every Given/When/Then step in .feature file has exact matching implementation in -steps.js file
+6. **DOUBLE CHECK and DOUBLE VALIDATE** all generated code and test artifacts with all points listed below
+7. **FRAMEWORK CONSISTENCY**: All generated files MUST be consistent with the existing SBS_Automation framework
+8. **NAMING CONVENTIONS**: All generated files MUST follow the naming conventions and generation patterns used in the SBS_Automation framework
 6. **FUNCTIONAL COMPLETENESS**: All generated files MUST be functional, properly structured, and require no corrections
 7. **SYNTAX VALIDATION**: All generated files MUST be free of syntax errors and coding issues
 8. **SBS_AUTOMATION STRICT COMPLIANCE**: Follow the SBS_Automation pattern STRICTLY when generating test artifacts

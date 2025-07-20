@@ -1,6 +1,6 @@
 const By = require('../../support/By');
 const helpers = require('../../support/helpers');
-let BasePage = require('../common/base-page');
+let BasePage = require('../../support/common/base-page');
 
 // Locators for RS Endpoint functionality
 const FEATURE_FLAG_PANEL = By.xpath('//div[@data-testid="feature-flag-panel"]');

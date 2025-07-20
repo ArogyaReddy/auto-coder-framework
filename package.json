@@ -22,6 +22,10 @@
     "generate:curl": "./auto-coder.sh generate input/curl/",
     "generate:cfc": "./auto-coder.sh generate input/jira/jira-story-cfc-bundle.txt",
     
+    "gpt-execute": "find generated/pages -name '*.js' -exec sed -i '' 's|../common/base-page|../../support/common/base-page|g' {} \\; && ./auto-coder.sh test generated/features/jira-story-rs-end-point.feature && open file:///$(pwd)/generated/reports/custom/detailed-test-report.html",
+    "gpt-test": "find generated/pages -name '*.js' -exec sed -i '' 's|../common/base-page|../../support/common/base-page|g' {} \\; && ./auto-coder.sh test",
+    "gpt-reports": "open file:///$(pwd)/generated/reports/custom/detailed-test-report.html && open file:///$(pwd)/generated/reports/playwright-report/index.html",
+    
     "test:generated": "./auto-coder.sh test generated/tests/",
     "test:features": "./auto-coder.sh test generated/features/", 
     "test:cfc": "./auto-coder.sh test generated/tests/jira-story-cfc-bundle-test.js",

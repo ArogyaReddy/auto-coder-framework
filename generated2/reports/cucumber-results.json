@@ -1,0 +1,780 @@
+[
+  {
+    "description": "    As a system administrator\n    I want to add CFC bundle during order provisioning\n    So that components are available but not activated",
+    "elements": [
+      {
+        "description": "",
+        "id": "cfc-bundle-provisioning;add-cfc-bundle-for-eso-order-without-cfc-bundle",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Add CFC bundle for ESO order without CFC bundle",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 283500,
+              "error_message": "TypeError: this.init is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:54:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the order provisioning system is available",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the installation context is configured",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "an ESO order exists without CFC bundle",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Bundle Type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Adp Essential"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Run Complete and HR"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Run Complete and HRPLUS"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "HR PRO"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the order contains major bundles:",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the order provisioning process starts",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the CFC bundle should be added to the order",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:87"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the CFC component should be available but not activated",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the \"avilableBundles\" property should be set in installation context",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:99"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the CFC task should appear in the to-do task list",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:104"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 178958,
+              "error_message": "TypeError: this.takeScreenshot is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:63:20)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cfc",
+            "line": 10
+          },
+          {
+            "name": "@provisioning",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cfc-bundle-provisioning;process-eso-order-with-existing-cfc-bundle",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Process ESO order with existing CFC bundle",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 76541,
+              "error_message": "TypeError: this.init is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:54:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the order provisioning system is available",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the installation context is configured",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "an ESO order exists with CFC bundle already included",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the order contains major bundles",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "the order provisioning process starts",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the existing CFC bundle should remain unchanged",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:109"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the CFC component should be available but not activated",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "the \"avilableBundles\" property should include the CFC bundle",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:114"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 73667,
+              "error_message": "TypeError: this.takeScreenshot is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:63:20)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cfc",
+            "line": 25
+          },
+          {
+            "name": "@provisioning",
+            "line": 25
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cfc-bundle-provisioning;verify-new-properties-in-installation-context",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Verify new properties in installation context",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 71582,
+              "error_message": "TypeError: this.init is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:54:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the order provisioning system is available",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the installation context is configured",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "the installation context is initialized",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:45"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "the CFC bundle is added during provisioning",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the \"avilableBundles\" property should exist in installation context",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:119"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the property should contain non-activated bundles",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:124"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the property should be available in core context wrapper",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:129"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the property should be visible in system model",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the property should be configured in index_Config file",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:139"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "the property should be accessible in top.run.context",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:144"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "the property should be present in nextgen installation context",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:149"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 65541,
+              "error_message": "TypeError: this.takeScreenshot is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:63:20)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cfc",
+            "line": 34
+          },
+          {
+            "name": "@context",
+            "line": 34
+          },
+          {
+            "name": "@properties",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cfc-bundle-provisioning;verify-cfc-component-subscriber-logging",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Verify CFC component subscriber logging",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 57958,
+              "error_message": "TypeError: this.init is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:54:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the order provisioning system is available",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the installation context is configured",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 48,
+            "name": "the CFC component subscriber is active",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:51"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "the CFC bundle becomes available",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:75"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "detailed logs should be generated for the CFC component",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:154"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "the logs should include component availability events",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:159"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "the logs should track the RequireActivation property",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:164"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 165916,
+              "error_message": "TypeError: this.takeScreenshot is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:63:20)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cfc",
+            "line": 46
+          },
+          {
+            "name": "@logging",
+            "line": 46
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cfc-bundle-provisioning;cfc-task-creation-on-component-availability",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "CFC task creation on component availability",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 169583,
+              "error_message": "TypeError: this.init is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:54:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the order provisioning system is available",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the installation context is configured",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "the CFC bundle has been added to the order",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "the CFC component becomes available",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:81"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "a CFC task should be created automatically",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:169"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "the task should appear in the to-do task list",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "the task should be associated with the correct IID",
+            "match": {
+              "location": "generated/steps/jira-story-cfc-bundle-steps.js:174"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 77375,
+              "error_message": "TypeError: this.takeScreenshot is not a function\n    at World.<anonymous> (/Users/arog/framework/auto-coder/support/hooks.js:63:20)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cfc",
+            "line": 54
+          },
+          {
+            "name": "@tasks",
+            "line": 54
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cfc-bundle-provisioning",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "CFC Bundle Provisioning",
+    "tags": [],
+    "uri": "generated/features/jira-story-cfc-bundle.feature"
+  }
+]

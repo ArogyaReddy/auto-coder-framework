@@ -1,0 +1,818 @@
+{
+  "summary": {
+    "total": 12,
+    "passed": 0,
+    "failed": 12,
+    "duration": 589894,
+    "timestamp": "2025-07-19T06:13:45.499Z"
+  },
+  "tests": [
+    {
+      "title": "should create employee with unknown type from Driver's License",
+      "status": "failed",
+      "duration": 41028,
+      "error": {
+        "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:21:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11209,
+          "error": null
+        },
+        {
+          "title": "Click locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')",
+          "category": "pw:api",
+          "duration": 30005,
+          "error": {
+            "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:21:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 122,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10116,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-6facf--type-from-Driver-s-License-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-6facf--type-from-Driver-s-License-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 19,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:05:02.781Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:21:20"
+      }
+    },
+    {
+      "title": "should convert W2 employee to contractor in EE app",
+      "status": "failed",
+      "duration": 41544,
+      "error": {
+        "message": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:37:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11814,
+          "error": null
+        },
+        {
+          "title": "Select option locator('[data-testid=\"employee-type-selector\"]')",
+          "category": "pw:api",
+          "duration": 30006,
+          "error": {
+            "message": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:37:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 123,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10155,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-2e590-yee-to-contractor-in-EE-app-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-2e590-yee-to-contractor-in-EE-app-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 35,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:05:55.544Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Update the element selector in the corresponding page file",
+          "Use browser developer tools to find the correct selector",
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:37:20"
+      }
+    },
+    {
+      "title": "should convert contractor to W2 employee in EE app",
+      "status": "failed",
+      "duration": 41843,
+      "error": {
+        "message": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:58:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 12098,
+          "error": null
+        },
+        {
+          "title": "Select option locator('[data-testid=\"employee-type-selector\"]')",
+          "category": "pw:api",
+          "duration": 30007,
+          "error": {
+            "message": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"employee-type-selector\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:58:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 129,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10137,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-5ebd1-or-to-W2-employee-in-EE-app-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-5ebd1-or-to-W2-employee-in-EE-app-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 56,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:06:48.626Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Update the element selector in the corresponding page file",
+          "Use browser developer tools to find the correct selector",
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:58:20"
+      }
+    },
+    {
+      "title": "should activate typeless creation workflow when feature flag enabled",
+      "status": "failed",
+      "duration": 41443,
+      "error": {
+        "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:79:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11697,
+          "error": null
+        },
+        {
+          "title": "Click locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')",
+          "category": "pw:api",
+          "duration": 30007,
+          "error": {
+            "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationWithoutType-toggle\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:79:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 121,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10124,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9c7fa-w-when-feature-flag-enabled-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9c7fa-w-when-feature-flag-enabled-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 77,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:07:41.291Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:79:20"
+      }
+    },
+    {
+      "title": "should prevent employee type setting when enableWorkerCreationForGenStruct enabled",
+      "status": "failed",
+      "duration": 41105,
+      "error": {
+        "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationForGenStruct-toggle\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationForGenStruct-toggle\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:94:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11357,
+          "error": null
+        },
+        {
+          "title": "Click locator('[data-testid=\"enableWorkerCreationForGenStruct-toggle\"]')",
+          "category": "pw:api",
+          "duration": 29998,
+          "error": {
+            "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationForGenStruct-toggle\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"enableWorkerCreationForGenStruct-toggle\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:94:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 120,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10121,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-748d4-reationForGenStruct-enabled-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-748d4-reationForGenStruct-enabled-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 92,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:08:33.592Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:94:20"
+      }
+    },
+    {
+      "title": "should validate schema mapping to runservices_employee endpoint",
+      "status": "failed",
+      "duration": 41330,
+      "error": {
+        "message": "TimeoutError: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"personal-info-name\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"personal-info-name\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:109:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11599,
+          "error": null
+        },
+        {
+          "title": "Fill \"John Doe\" locator('[data-testid=\"personal-info-name\"]')",
+          "category": "pw:api",
+          "duration": 30001,
+          "error": {
+            "message": "TimeoutError: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"personal-info-name\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"personal-info-name\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:109:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 112,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10131,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-dc575-nservices-employee-endpoint-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-dc575-nservices-employee-endpoint-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 107,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:09:26.143Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:109:20"
+      }
+    },
+    {
+      "title": "should handle runservices_employee endpoint failure gracefully",
+      "status": "failed",
+      "duration": 41305,
+      "error": {
+        "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"disable-runservices-endpoint-btn\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"disable-runservices-endpoint-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:128:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11580,
+          "error": null
+        },
+        {
+          "title": "Click locator('[data-testid=\"disable-runservices-endpoint-btn\"]')",
+          "category": "pw:api",
+          "duration": 30004,
+          "error": {
+            "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"disable-runservices-endpoint-btn\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"disable-runservices-endpoint-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:128:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 110,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 11128,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9b8d5-endpoint-failure-gracefully-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9b8d5-endpoint-failure-gracefully-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 126,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:10:19.725Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:128:20"
+      }
+    },
+    {
+      "title": "should handle concurrent type conversion attempts",
+      "status": "failed",
+      "duration": 41052,
+      "error": {
+        "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:145:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11314,
+          "error": null
+        },
+        {
+          "title": "Click locator('[data-testid=\"create-test-employee-btn\"]')",
+          "category": "pw:api",
+          "duration": 30009,
+          "error": {
+            "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:145:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 110,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10146,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4b570-nt-type-conversion-attempts-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4b570-nt-type-conversion-attempts-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 143,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:11:12.013Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:145:20"
+      }
+    },
+    {
+      "title": "should maintain comprehensive audit trail for type changes",
+      "status": "failed",
+      "duration": 41280,
+      "error": {
+        "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:164:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11531,
+          "error": null
+        },
+        {
+          "title": "Click locator('[data-testid=\"create-test-employee-btn\"]')",
+          "category": "pw:api",
+          "duration": 30005,
+          "error": {
+            "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-test-employee-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:164:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 119,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 10125,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4855a-udit-trail-for-type-changes-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4855a-udit-trail-for-type-changes-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 162,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:12:04.434Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:164:20"
+      }
+    },
+    {
+      "title": "should maintain data integrity during type conversion",
+      "status": "failed",
+      "duration": 41385,
+      "error": {
+        "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-employee-with-records-btn\"]')\u001b[22m\n",
+        "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-employee-with-records-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:184:20"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 11651,
+          "error": null
+        },
+        {
+          "title": "Click locator('[data-testid=\"create-employee-with-records-btn\"]')",
+          "category": "pw:api",
+          "duration": 30007,
+          "error": {
+            "message": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-employee-with-records-btn\"]')\u001b[22m\n",
+            "stack": "TimeoutError: page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create-employee-with-records-btn\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:184:20"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 119,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 11125,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-a2bd0-rity-during-type-conversion-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-a2bd0-rity-during-type-conversion-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 182,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:12:58.012Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:184:20"
+      }
+    },
+    {
+      "title": "should integrate with existing SBS_Automation framework",
+      "status": "failed",
+      "duration": 11870,
+      "error": {
+        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-testid=\"sbs-integration-status\"]')\nExpected string: \u001b[32m\"Connected\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"sbs-integration-status\"]')\u001b[22m\n",
+        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-testid=\"sbs-integration-status\"]')\nExpected string: \u001b[32m\"Connected\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"sbs-integration-status\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:208:78"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 6839,
+          "error": null
+        },
+        {
+          "title": "Navigate to \"/\"",
+          "category": "pw:api",
+          "duration": 285,
+          "error": null
+        },
+        {
+          "title": "toContainText",
+          "category": "expect",
+          "duration": 5010,
+          "error": {
+            "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-testid=\"sbs-integration-status\"]')\nExpected string: \u001b[32m\"Connected\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"sbs-integration-status\"]')\u001b[22m\n",
+            "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('[data-testid=\"sbs-integration-status\"]')\nExpected string: \u001b[32m\"Connected\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"sbs-integration-status\"]')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:208:78"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 122,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 11123,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-da494-ng-SBS-Automation-framework-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-da494-ng-SBS-Automation-framework-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 203,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:13:22.096Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:208:78"
+      }
+    },
+    {
+      "title": "should support real locator updates for actual UI testing",
+      "status": "failed",
+      "duration": 11107,
+      "error": {
+        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('REAL_SELECTOR_NEEDED')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('REAL_SELECTOR_NEEDED')\u001b[22m\n",
+        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('REAL_SELECTOR_NEEDED')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('REAL_SELECTOR_NEEDED')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:228:60"
+      },
+      "steps": [
+        {
+          "title": "Before Hooks",
+          "category": "hook",
+          "duration": 6368,
+          "error": null
+        },
+        {
+          "title": "toBeVisible",
+          "category": "expect",
+          "duration": 5008,
+          "error": {
+            "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('REAL_SELECTOR_NEEDED')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('REAL_SELECTOR_NEEDED')\u001b[22m\n",
+            "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('REAL_SELECTOR_NEEDED')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('REAL_SELECTOR_NEEDED')\u001b[22m\n\n    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:228:60"
+          }
+        },
+        {
+          "title": "After Hooks",
+          "category": "hook",
+          "duration": 118,
+          "error": null
+        },
+        {
+          "title": "Worker Cleanup",
+          "category": "hook",
+          "duration": 11133,
+          "error": null
+        }
+      ],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "contentType": "image/png",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-3a910-dates-for-actual-UI-testing-chromium/test-failed-1.png"
+        },
+        {
+          "name": "error-context",
+          "contentType": "text/markdown",
+          "path": "/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-3a910-dates-for-actual-UI-testing-chromium/error-context.md"
+        }
+      ],
+      "location": {
+        "file": "/Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js",
+        "line": 216,
+        "column": 5
+      },
+      "timestamp": "2025-07-19T06:13:45.427Z",
+      "failureAnalysis": {
+        "likely_cause": "Element interaction timeout - element may be loading slowly or selector is incorrect",
+        "locator_issues": [],
+        "recommendations": [
+          "Verify element selector is correct",
+          "Check if element requires additional wait conditions",
+          "Consider increasing timeout values if element loads slowly"
+        ],
+        "code_location": "jira-story-rs-end-point-test.js:228:60"
+      }
+    }
+  ],
+  "framework_info": {
+    "name": "Auto-Coder Test Framework",
+    "version": "1.0.0",
+    "expected_behavior": "Tests should fail initially due to placeholder locators - this is expected and indicates real tests were generated"
+  }
+}

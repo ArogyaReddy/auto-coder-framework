@@ -1,0 +1,42 @@
+# Page snapshot
+
+```yaml
+- main:
+  - button
+  - img "ADP Home"
+  - heading "Welcome!" [level=2]
+  - alert "Application Error. Please try again later":
+    - img "Error":
+      - img
+    - text: Application Error. Please try again later
+    - button "Close"
+  - text: User ID
+  - textbox "User ID": Arogya@24890183
+  - checkbox "Remember user ID":
+    - img
+    - text: Remember user ID
+  - button
+  - text: Password
+  - textbox "Password": Test0705
+  - button "Need help signing in?"
+  - button "Sign in"
+  - separator
+  - text: New user ?
+  - button "Get started"
+  - separator
+  - heading "Not a client yet?" [level=3]
+  - text: RUN Powered by ADP® helps you manage your payroll, people, and benefits from anywhere, so you can spend more time growing your business.
+  - button "LEARN MORE":
+    - text: LEARN MORE
+    - img "Go to ADP Mobile App download page":
+      - img
+- contentinfo:
+  - button "Privacy Statement"
+  - button "Terms of Use"
+  - button "AI Transparency"
+  - button "Co-Browse":
+    - img "Chat with a Client support":
+      - img
+    - text: Co-Browse
+  - text: © 2006 - 2025 ADP, Inc. All rights reserved.
+```

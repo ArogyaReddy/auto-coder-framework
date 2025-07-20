@@ -1,0 +1,1424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Coder Detailed Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .summary { display: flex; gap: 20px; margin-bottom: 20px; }
+        .metric { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; text-align: center; }
+        .metric.passed { border-left: 5px solid #4CAF50; }
+        .metric.failed { border-left: 5px solid #f44336; }
+        .metric.total { border-left: 5px solid #2196F3; }
+        .metric h3 { margin: 0; font-size: 24px; }
+        .metric p { margin: 5px 0 0 0; color: #666; }
+        .test-section { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .test-item { border-bottom: 1px solid #eee; padding: 15px 0; }
+        .test-item:last-child { border-bottom: none; }
+        .test-title { font-weight: bold; font-size: 16px; margin-bottom: 10px; }
+        .test-duration { color: #666; font-size: 12px; margin-bottom: 10px; }
+        .test-failed .test-title { color: #f44336; }
+        .test-passed .test-title { color: #4CAF50; }
+        .test-steps { background: #f8f9fa; padding: 15px; border-radius: 4px; margin: 10px 0; }
+        .test-steps h4 { margin-top: 0; color: #333; }
+        .test-steps ol { margin: 0; padding-left: 25px; }
+        .test-steps li { margin: 8px 0; padding: 8px; background: white; border-radius: 3px; border-left: 3px solid #ddd; }
+        .step-failed { border-left-color: #f44336; background: #ffebee; }
+        .step-passed { border-left-color: #4CAF50; background: #e8f5e8; }
+        .step-category { background: #e3f2fd; padding: 2px 6px; border-radius: 3px; font-size: 11px; margin-left: 10px; }
+        .step-duration { color: #666; font-size: 11px; float: right; }
+        .step-error { color: #c62828; font-size: 12px; margin-top: 5px; padding: 5px; background: #ffcdd2; border-radius: 3px; }
+        .test-attachments { background: #fff3e0; padding: 10px; border-radius: 4px; margin-top: 10px; }
+        .test-attachments h4 { margin-top: 0; color: #f57c00; }
+        .stack-trace { margin-top: 10px; }
+        .stack-trace details { margin-top: 5px; }
+        .stack-trace pre { background: #f5f5f5; padding: 10px; border-radius: 3px; overflow-x: auto; font-size: 12px; }
+        .error-details { background: #ffebee; padding: 15px; border-radius: 4px; margin-top: 10px; }
+        .error-message { color: #c62828; font-weight: bold; margin-bottom: 10px; }
+        .failure-analysis { background: #fff3e0; padding: 15px; border-radius: 4px; margin-top: 10px; }
+        .recommendations { background: #e8f5e8; padding: 15px; border-radius: 4px; margin-top: 10px; }
+        .recommendations ul { margin: 0; padding-left: 20px; }
+        .code-location { font-family: monospace; background: #f5f5f5; padding: 5px; border-radius: 3px; }
+        .notice { background: #e3f2fd; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #2196F3; }
+        .notice h3 { margin-top: 0; color: #1976d2; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Auto-Coder Detailed Test Report</h1>
+        <p>Generated: 7/19/2025, 2:13:45 AM</p>
+        <p>Framework: Auto-Coder Test Artifact Generator</p>
+    </div>
+
+    <div class="notice">
+        <h3>💡 Expected Behavior Notice</h3>
+        <p>Tests are designed to fail initially when using generated test artifacts. This is expected behavior because:</p>
+        <ul>
+            <li>Generated tests use placeholder locators (data-testid attributes) that don't exist in the actual application</li>
+            <li>This failure pattern confirms the framework is generating real tests, not mocks</li>
+            <li>Users should update locators in page files with actual application element selectors</li>
+            <li>Once locators are updated, tests should run successfully against the real application</li>
+        </ul>
+    </div>
+
+    <div class="summary">
+        <div class="metric total">
+            <h3>12</h3>
+            <p>Total Tests</p>
+        </div>
+        <div class="metric passed">
+            <h3>0</h3>
+            <p>Passed</p>
+        </div>
+        <div class="metric failed">
+            <h3>12</h3>
+            <p>Failed (Expected)</p>
+        </div>
+    </div>
+
+    
+    <div class="test-section">
+        <h2>❌ Failed Tests (Expected - Locators Need Updating)</h2>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should create employee with unknown type from Driver's License</div>
+                <div class="test-duration">Duration: 41028ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11209ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Click locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30005ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">122ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10116ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:21:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:21:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-6facf--type-from-Driver-s-License-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-6facf--type-from-Driver-s-License-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should convert W2 employee to contractor in EE app</div>
+                <div class="test-duration">Duration: 41544ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11814ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Select option locator('[data-testid="employee-type-selector"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30006ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="employee-type-selector"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">123ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10155ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="employee-type-selector"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:37:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Update the element selector in the corresponding page file</li><li>Use browser developer tools to find the correct selector</li><li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="employee-type-selector"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:37:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-2e590-yee-to-contractor-in-EE-app-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-2e590-yee-to-contractor-in-EE-app-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should convert contractor to W2 employee in EE app</div>
+                <div class="test-duration">Duration: 41843ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">12098ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Select option locator('[data-testid="employee-type-selector"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30007ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="employee-type-selector"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">129ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10137ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="employee-type-selector"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:58:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Update the element selector in the corresponding page file</li><li>Use browser developer tools to find the correct selector</li><li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="employee-type-selector"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:58:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-5ebd1-or-to-W2-employee-in-EE-app-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-5ebd1-or-to-W2-employee-in-EE-app-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should activate typeless creation workflow when feature flag enabled</div>
+                <div class="test-duration">Duration: 41443ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11697ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Click locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30007ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">121ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10124ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:79:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationWithoutType-toggle"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:79:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9c7fa-w-when-feature-flag-enabled-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9c7fa-w-when-feature-flag-enabled-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should prevent employee type setting when enableWorkerCreationForGenStruct enabled</div>
+                <div class="test-duration">Duration: 41105ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11357ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Click locator('[data-testid="enableWorkerCreationForGenStruct-toggle"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">29998ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationForGenStruct-toggle"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">120ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10121ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationForGenStruct-toggle"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:94:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="enableWorkerCreationForGenStruct-toggle"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:94:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-748d4-reationForGenStruct-enabled-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-748d4-reationForGenStruct-enabled-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should validate schema mapping to runservices_employee endpoint</div>
+                <div class="test-duration">Duration: 41330ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11599ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Fill "John Doe" locator('[data-testid="personal-info-name"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30001ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="personal-info-name"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">112ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10131ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="personal-info-name"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:109:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.fill: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="personal-info-name"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:109:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-dc575-nservices-employee-endpoint-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-dc575-nservices-employee-endpoint-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should handle runservices_employee endpoint failure gracefully</div>
+                <div class="test-duration">Duration: 41305ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11580ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Click locator('[data-testid="disable-runservices-endpoint-btn"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30004ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="disable-runservices-endpoint-btn"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">110ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11128ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="disable-runservices-endpoint-btn"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:128:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="disable-runservices-endpoint-btn"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:128:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9b8d5-endpoint-failure-gracefully-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-9b8d5-endpoint-failure-gracefully-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should handle concurrent type conversion attempts</div>
+                <div class="test-duration">Duration: 41052ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11314ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Click locator('[data-testid="create-test-employee-btn"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30009ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-test-employee-btn"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">110ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10146ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-test-employee-btn"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:145:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-test-employee-btn"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:145:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4b570-nt-type-conversion-attempts-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4b570-nt-type-conversion-attempts-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should maintain comprehensive audit trail for type changes</div>
+                <div class="test-duration">Duration: 41280ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11531ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Click locator('[data-testid="create-test-employee-btn"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30005ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-test-employee-btn"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">119ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">10125ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-test-employee-btn"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:164:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-test-employee-btn"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:164:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4855a-udit-trail-for-type-changes-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-4855a-udit-trail-for-type-changes-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should maintain data integrity during type conversion</div>
+                <div class="test-duration">Duration: 41385ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11651ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>Click locator('[data-testid="create-employee-with-records-btn"]')</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">30007ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-employee-with-records-btn"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">119ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11125ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-employee-with-records-btn"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:184:20</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>TimeoutError: page.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="create-employee-with-records-btn"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:184:20</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-a2bd0-rity-during-type-conversion-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-a2bd0-rity-during-type-conversion-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should integrate with existing SBS_Automation framework</div>
+                <div class="test-duration">Duration: 11870ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">6839ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Navigate to "/"</strong>
+                                    <span class="step-category">[pw:api]</span>
+                                    <span class="step-duration">285ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>toContainText</strong>
+                                    <span class="step-category">[expect]</span>
+                                    <span class="step-duration">5010ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('[data-testid="sbs-integration-status"]')
+Expected string: [32m"Connected"[39m
+Received: <element(s) not found>
+Call log:
+[2m  - Expect "toContainText" with timeout 5000ms[22m
+[2m  - waiting for locator('[data-testid="sbs-integration-status"]')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">122ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11123ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('[data-testid="sbs-integration-status"]')
+Expected string: [32m"Connected"[39m
+Received: <element(s) not found>
+Call log:
+[2m  - Expect "toContainText" with timeout 5000ms[22m
+[2m  - waiting for locator('[data-testid="sbs-integration-status"]')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:208:78</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('[data-testid="sbs-integration-status"]')
+Expected string: [32m"Connected"[39m
+Received: <element(s) not found>
+Call log:
+[2m  - Expect "toContainText" with timeout 5000ms[22m
+[2m  - waiting for locator('[data-testid="sbs-integration-status"]')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:208:78</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-da494-ng-SBS-Automation-framework-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-da494-ng-SBS-Automation-framework-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+            <div class="test-item test-failed">
+                <div class="test-title">should support real locator updates for actual UI testing</div>
+                <div class="test-duration">Duration: 11107ms</div>
+                
+                
+                    <div class="test-steps">
+                        <h4>📋 Test Steps Executed:</h4>
+                        <ol>
+                            
+                                <li class="step-passed">
+                                    <strong>Before Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">6368ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-failed">
+                                    <strong>toBeVisible</strong>
+                                    <span class="step-category">[expect]</span>
+                                    <span class="step-duration">5008ms</span>
+                                    
+                                        <div class="step-error">
+                                            <strong>Step Error:</strong> Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('REAL_SELECTOR_NEEDED')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - Expect "toBeVisible" with timeout 5000ms[22m
+[2m  - waiting for locator('REAL_SELECTOR_NEEDED')[22m
+
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>After Hooks</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">118ms</span>
+                                    
+                                </li>
+                            
+                                <li class="step-passed">
+                                    <strong>Worker Cleanup</strong>
+                                    <span class="step-category">[hook]</span>
+                                    <span class="step-duration">11133ms</span>
+                                    
+                                </li>
+                            
+                        </ol>
+                    </div>
+                
+                
+                <div class="error-details">
+                    <div class="error-message">Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('REAL_SELECTOR_NEEDED')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - Expect "toBeVisible" with timeout 5000ms[22m
+[2m  - waiting for locator('REAL_SELECTOR_NEEDED')[22m
+</div>
+                    
+                        <div class="failure-analysis">
+                            <strong>🔍 Failure Analysis:</strong>
+                            <p><strong>Likely Cause:</strong> Element interaction timeout - element may be loading slowly or selector is incorrect</p>
+                            <p><strong>Location:</strong> <span class="code-location">jira-story-rs-end-point-test.js:228:60</span></p>
+                            
+                        </div>
+                        <div class="recommendations">
+                            <strong>🛠️ Recommendations:</strong>
+                            <ul>
+                                <li>Verify element selector is correct</li><li>Check if element requires additional wait conditions</li><li>Consider increasing timeout values if element loads slowly</li>
+                                <li>Use browser developer tools to inspect elements and get correct selectors</li>
+                                <li>Replace data-testid attributes with actual CSS selectors or XPath expressions</li>
+                                <li>Test selectors in browser console before updating page files</li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                        <div class="stack-trace">
+                            <strong>📚 Stack Trace (Click to expand):</strong>
+                            <details>
+                                <summary>View full stack trace</summary>
+                                <pre>Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('REAL_SELECTOR_NEEDED')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - Expect "toBeVisible" with timeout 5000ms[22m
+[2m  - waiting for locator('REAL_SELECTOR_NEEDED')[22m
+
+    at /Users/arog/framework/auto-coder/generated/tests/jira-story-rs-end-point-test.js:228:60</pre>
+                            </details>
+                        </div>
+                    
+                </div>
+                
+                
+                    <div class="test-attachments">
+                        <h4>📎 Test Attachments:</h4>
+                        <ul>
+                            
+                                <li>
+                                    <strong>screenshot</strong> (image/png)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-3a910-dates-for-actual-UI-testing-chromium/test-failed-1.png</code>
+                                </li>
+                            
+                                <li>
+                                    <strong>error-context</strong> (text/markdown)
+                                    <br><code>/Users/arog/framework/auto-coder/generated/reports/artifacts/jira-story-rs-end-point-te-3a910-dates-for-actual-UI-testing-chromium/error-context.md</code>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+        
+    </div>
+    
+
+    
+
+    <div class="test-section">
+        <h2>📋 Next Steps for Real Application Testing</h2>
+        <ol>
+            <li><strong>Identify Failing Locators:</strong> Review the failed tests above to see which locators need updating</li>
+            <li><strong>Inspect Real Application:</strong> Use browser developer tools to find actual element selectors</li>
+            <li><strong>Update Page Files:</strong> Replace placeholder locators in generated page files with real selectors</li>
+            <li><strong>Test Selectors:</strong> Validate selectors work in browser console before running tests</li>
+            <li><strong>Re-run Tests:</strong> Execute tests again to verify they work with real application</li>
+            <li><strong>Copy to SBS_Automation:</strong> Once working, copy test files to SBS_Automation framework</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>📁 Generated Test Files Location</h2>
+        <p>Your test artifacts are located in:</p>
+        <ul>
+            <li><code>generated/features/</code> - Cucumber feature files</li>
+            <li><code>generated/steps/</code> - Step definition files</li>
+            <li><code>generated/pages/</code> - Page object files (update locators here)</li>
+            <li><code>generated/tests/</code> - Playwright test files</li>
+            <li><code>generated/summary/</code> - Guide files with detailed instructions</li>
+        </ul>
+    </div>
+</body>
+</html>
